@@ -1,6 +1,12 @@
-Import java.util.ArrayList
+import java.util.ArrayList;
 public class Inventory{
-    public static void main(String[] args){
-        System.out.println("Hello world");
+    private ArrayList<Item> items;
+
+    public Inventory() {
+        items=new ArrayList<>();
     }
+    public void addItem(Item item1){
+        items.add(item1);
+    }
+
 }
