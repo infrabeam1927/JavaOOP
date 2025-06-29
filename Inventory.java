@@ -5,8 +5,13 @@ public class Inventory{
     public Inventory() {
         items=new ArrayList<>();
     }
-    public void addItem(Item item1){
-        items.add(item1);
+    public void addItem(Item item){
+        items.add(item);
+    }
+    public void displayInventory(){
+        for (Item item:items){
+            System.out.println("item:"+ item.getName()+  ", quantity : "+item.getQuantity() );
+        }
     }
 
 }
